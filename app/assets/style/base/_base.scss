@@ -1,0 +1,11 @@
+h1, .h1 { @include font-size($h1-font-size); }  //40
+h2, .h2 { @include font-size($h2-font-size); }  //32
+h3, .h3 { @include font-size($h3-font-size); }  //28
+h4, .h4 { @include font-size($h4-font-size); }  //24
+h5, .h5 { @include font-size($h5-font-size); }  //20
+h6, .h6 { @include font-size($h6-font-size); }  //16
+
+h1, .h1, h2, .h2 , h3, .h3, h4, .h4 , h5, .h5, h6, .h6 { 
+    line-height: 1.5;
+    margin: 0;
+}

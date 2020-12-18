@@ -1,0 +1,92 @@
+@mixin bgu($url, $height) {
+    background: url($url);
+    height: $height;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// banner
+.bg-index-banner {
+    @include bgu('../images/index1.jpg', calc(100vh - 56px));
+}
+
+.bg-footer-banner {
+    @include bgu('../images/index10.jpg', calc(60vh));
+}
+
+// index-product
+.bg-index-product-sm {
+    width: 100%;
+    padding-top: 70%;
+    @include md {
+        padding-top: 150%;
+    }
+}
+
+.bg-index-product {
+    width: 100%;
+    padding-top: 100%;
+    @include md {
+        padding-top: 75%;
+    }
+}
+
+.bg-product {
+    width: 100%;
+    padding-top: 100%;
+}
+
+.bg-index-product-md {
+    width: 100%;
+    padding-top: 150%;
+    @include md {
+        padding-top: 100%;
+    }
+}
+
+.bg-index-product-lg {
+    width: 100%;
+    padding-top: 195%;
+    // @include md {
+    //     padding-top: 100%;
+    // }
+}
+
+.bg-logIn {
+    width: 100%;
+    padding-top: 100%;
+    @include md {
+        padding-top: 65%;
+    }
+}
+
+.bg-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-pos-left {
+    background-position: left;
+}
+.bg-pos-top {
+    background-position: top;
+    &-30 {
+        background-position: center 30%;
+    }
+}
+.bg-pos-bottom {
+    background-position: bottom;
+}
+
+.bg-md-pos-top {
+    @include md {
+        background-position: center 30%;
+    }
+}
+.bg-md-pos-bottom {
+    @include md {
+        background-position: center bottom;
+    }
+}
