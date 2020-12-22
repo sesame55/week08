@@ -13,15 +13,15 @@
 
     <body>
         <!-- nav -->
-        <nav class="navbar navbar-expand-md navbar-light p-0">
-    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light p-0 topNav">
+    <div class="container-fluid container-md">
         <!-- logo -->
         <h1 class="m-0">
             <a class="navbar-brand logo d-block" href="index.html">PETPET</a>
         </h1>
         <!-- 下拉選單 -->
         <button
-            class="navbar-toggler border-0"
+            class="navbar-toggler border-0 btn-nav p-0"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -29,19 +29,27 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-            <span class="navbar-toggler-icon"></span>
+            <span class="material-icons p-3">
+                menu
+            </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-md-auto">
                 <li class="nav-item mr-0 mr-md-10 ">
-                    <a class="nav-link text-primary text-center p-3 p-md-0" href="＃"> 預約服務 </a>
+                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="＃">
+                        預約服務
+                    </a>
                 </li>
-                <li class="nav-item mr-0 mr-md-10 ">
-                    <a class="nav-link text-primary text-center p-3 p-md-0" href="#"> 成為寵物保姆 </a>
+                <li class="nav-item mr-0 mr-md-10">
+                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="#">
+                        成為寵物保姆
+                    </a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link text-primary text-center p-3 p-md-0" href="#"> 登入 </a>
+                <li class="nav-item">
+                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="#">
+                    登入 
+                </a>
                 </li>
             </ul>
         </div>
@@ -51,7 +59,17 @@
         
         <!-- 主要內容 -->
         
-先寫ejs，這頁等一下。
+<header class="container-fluid p-0">
+    <div class="row no-gutters flex-column flex-lg-row align-items-center">
+        <div class="col-lg-5 ">
+            <img src="assets/images/index-1.png" class='img-index-banner' alt="" />
+        </div>
+        <div class="col-lg-7">
+            <h2>寵物服務，盡在 PETPET</h2>
+        </div>
+    </div>
+</header>
+
 
         <!-- footer -->
         <h1>
