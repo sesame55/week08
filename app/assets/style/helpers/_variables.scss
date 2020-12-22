@@ -71,7 +71,9 @@ $secondary:     #D54100 !default;
 $success:       $green !default;
 // $info:          $cyan !default;
 $info:          #6C757D !default;
-$warning:       $yellow !default;
+// $warning:       $yellow !default;
+$warning:       #F8B52E !default;
+
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
