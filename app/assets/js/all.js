@@ -40,9 +40,9 @@ const nurse = [
         bgImgUrl: 'assets/images/index-6.jpeg',
         peopleImgUrl: 'assets/images/person-5.png',
         name: 'Wiki',
-        skill: '寵物行為訓練',
-        numOne: '45',
-        numTwo: '123',
+        skill: '寄宿、美容',
+        numOne: '12',
+        numTwo: '345',
     },
 ];
 const App = {
@@ -56,3 +56,17 @@ const App = {
     },
 };
 Vue.createApp(App).mount('#app');
+
+// index-swiper
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
+    },
+});
