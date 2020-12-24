@@ -8,16 +8,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <!-- vue -->
-        <script src="https://unpkg.com/vue@next"></script>
         <!-- aos -->
         <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
-        <!-- swiper -->
-        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- <script src="./assets/js/swiper.js"></script> -->
+        <!-- vue -->
+        <script src="https://unpkg.com/vue@next"></script>
         <!-- all.css -->
         <link rel="stylesheet" href="./assets/style/all.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </head>
 
     <body>
@@ -124,7 +123,7 @@
 
 <!-- 保姆 -->
 <section class="container mt-15 mt-md-20">
-    <h2 class="mb-1 text-primary font-lg font-lg-3xl">本月熱門保姆</h2>
+    <h2 class="mb-1 text-primary font-3xl">本月熱門保姆</h2>
     <p class="mb-3 text-primary font-lg">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
     <!-- Swiper -->
     <div class="position-relative">
@@ -132,7 +131,7 @@
             <div class="swiper-wrapper" id="app">
                 <!-- Slides -->
                 <div class="swiper-slide" v-for="item in nurse">
-                    <div class="card position-relative text-primary">
+                    <div class="card shadow rounded position-relative text-primary pb-7">
                         <img v-bind:src="item.bgImgUrl" class="card-img-top" alt="..." />
                         <img v-bind:src="item.peopleImgUrl" class="card-img-center" alt="..." />
                         <div class="card-body p-0 mt-14 text-center">
@@ -158,29 +157,12 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-prev material-icons text-secondary">play_circle_filled</div>
-        <div class="swiper-next material-icons text-secondary">play_circle_filled</div>
+        <div class="swiper-prev material-icons text-secondary d-none d-md-block">play_circle_filled</div>
+        <div class="swiper-next material-icons text-secondary d-none d-md-block">play_circle_filled</div>
     </div>
 </section>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 3000,
-        },
-        // pagination: {
-        //     el: '.swiper-pagination',
-        //     clickable: true,
-        // },
-        navigation: {
-            nextEl: '.swiper-next',
-            prevEl: '.swiper-prev',
-        },
-    });
-</script>
 
+<!-- 線上預約 -->
 
         <!-- footer -->
         <h1>
@@ -188,7 +170,7 @@
 </h1>
 
         <!-- JS -->
-       
+
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -199,12 +181,12 @@
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"
         ></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
         <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
         <!-- <script src="./assets/js/swiper.js"></script> -->
         <script src="./assets/js/all.js"></script>
-        <script>
+        <!-- <script>
             AOS.init();
-        </script>
+        </script> -->
     </body>
 </html>
