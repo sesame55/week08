@@ -7,11 +7,11 @@ current: index
 
 <!-- banner -->
 <header class="container-fluid p-0">
-    <div class="row no-gutters flex-column flex-lg-row align-items-center">
+    <div class="row no-gutters flex-column flex-lg-row align-items-center position-relative">
         <div class="col-lg-5">
             <img src="assets/images/index-1.png" class="img-index-banner" alt="" />
         </div>
-        <div class=" col-sm-6 col-md-5 col-lg-7 pl-lg-8 mt-3 mt-md-6 mt-lg-0">
+        <div class="col-sm-6 col-md-5 col-lg-7 pl-lg-8 mt-3 mt-md-6 mt-lg-0">
             <!-- title -->
             <h2 class="mb-1 mb-sm-2 mb-lg-4 font-xxl font-sm-3xl font-lg-4xl text-primary text-center text-lg-left">
                 寵物服務，盡在 PETPET
@@ -23,6 +23,7 @@ current: index
                 <p class="mb-0">當您的毛孩有需要時，</p>
                 <p class="mb-0">幫您找到最合適的服務者！</p>
             </div>
+            <!-- search -->
             <form class="row no-gutters">
                 <div class="col-lg-2 mb-4 mb-md-3 mb-lg-0">
                     <select class="custom-select rounded-0 h5 pl-4 py-2">
@@ -33,7 +34,7 @@ current: index
                     </select>
                 </div>
                 <div class="col-lg-3 mb-4 mb-md-3 mb-lg-0">
-                    <select class="custom-select rounded-0 h5  pl-4 py-2">
+                    <select class="custom-select rounded-0 h5 pl-4 py-2">
                         <option selected>服務</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -41,7 +42,7 @@ current: index
                     </select>
                 </div>
                 <div class="col-lg-3 mb-4 mb-md-3 mb-lg-0">
-                    <select class="custom-select rounded-0 h5  pl-4 py-2">
+                    <select class="custom-select rounded-0 h5 pl-4 py-2">
                         <option selected>地區</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -49,9 +50,74 @@ current: index
                     </select>
                 </div>
                 <div class="input-group-append col-lg-2">
-                    <button class="btn btn-secondary rounded-0 w-100 h5 " type="button">搜尋</button>
+                    <button class="btn btn-secondary rounded-0 w-100 h5" type="button">搜尋</button>
                 </div>
             </form>
+            <!-- arrow -->
+            <span class="material-icons text-secondary btn-arrow-down d-none d-lg-block"> arrow_drop_down_circle </span>
         </div>
     </div>
 </header>
+
+<!-- 保姆 -->
+<section class="container mt-15 mt-md-20">
+    <h2 class="mb-1 text-primary font-lg font-lg-3xl">本月熱門保姆</h2>
+    <p class="mb-3 text-primary font-lg">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+    <!-- Swiper -->
+    <div class="position-relative">
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="app">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <ul class="list-unstyled d-flex justify-content-between">
+                        <li v-for="item in nurse" class="swiper-li">
+                            <div class="card position-relative text-primary">
+                                <img v-bind:src="item.bgImgUrl" class="card-img-top" alt="..." />
+                                <img v-bind:src="item.peopleImgUrl" class="card-img-center" alt="..." />
+                                <div class="card-body p-0 mt-14 text-center">
+                                    <h5 class="card-title mb-1">{{item.name}}</h5>
+                                    <p class="card-text mb-3">{{item.skill}}</p>
+                                    <a href="#" class="btn btn-secondary w-50 mx-auto mb-5">預約</a>
+                                    <div class="d-flex justify-content-around mb-3">
+                                        <span>獲得評價</span>
+                                        <span>已完成訂單</span>
+                                    </div>
+                                    <div class="d-flex justify-content-around h3">
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 mr-1">{{item.numOne}}</p>
+                                            <span class="font-sm">則</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 mr-1">{{item.numTwo}}</p>
+                                            <span class="font-sm">件</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-prev material-icons text-secondary">play_circle_filled</div>
+        <div class="swiper-next material-icons text-secondary">play_circle_filled</div>
+    </div>
+</section>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        // slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+    });
+</script>

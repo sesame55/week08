@@ -6,15 +6,23 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title><%- title %></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- vue -->
+        <script src="https://unpkg.com/vue@next"></script>
+        <!-- aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- all.css -->
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
     <body>
         <!-- nav -->
-        <%- include('header/nav.ejs') %> 
-        
+        <%- include('header/nav.ejs') %>
+
         <!-- 主要內容 -->
         <%- contents %>
 
@@ -23,7 +31,6 @@
 
         <!-- JS -->
         <!-- <script src="./assets/js/vendors.js"></script> -->
-        <!-- <script src="./assets/js/all.js"></script> -->
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -35,6 +42,8 @@
             crossorigin="anonymous"
         ></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/js/all.js"></script>
         <script>
             AOS.init();
         </script>

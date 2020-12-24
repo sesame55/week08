@@ -1,0 +1,47 @@
+// 輪播箭頭
+.swiper-prev {
+    font-size: 44px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(-180deg);
+    z-index: 10;
+    border-radius: 50%;
+    background: #fff;
+}
+.swiper-next {
+    font-size: 44px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 10;
+    border-radius: 50%;
+    background: #fff;
+}
+.swiper-button-next:after {
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.swiper-li {
+    width: calc((100% - 60px) / 3);
+}
+
+.card-img-top {
+    height: 120px;
+    object-fit: cover;
+    position: relative;
+}
+.card-img-center {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid $white;
+    object-fit: cover;
+}

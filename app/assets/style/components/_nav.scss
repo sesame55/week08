@@ -30,6 +30,7 @@
     }
 }
 
+// 折疊選單的按鈕
 .btn-nav {
     &:focus {
         border: 0;
@@ -41,3 +42,14 @@
         font-weight: bold;
     }
 }
+
+// 下拉選單的按鈕
+.btn-arrow-down {
+    font-size: 44px;
+    position: absolute;
+    bottom: -80%;
+    // top: 0;
+    right: 15%;
+    // left: 0;
+}
+
