@@ -26,15 +26,24 @@ const nurse = [
         numOne: '52',
         numTwo: '196',
     },
-  //   {
-  //     id: '3',
-  //     bgImgUrl: 'assets/images/index-5.jpeg',
-  //     peopleImgUrl: 'assets/images/person-4.png',
-  //     name: 'Yvonne',
-  //     skill: '美容、寵物行為訓練',
-  //     numOne: '52',
-  //     numTwo: '196',
-  // },
+    {
+        id: '4',
+        bgImgUrl: 'assets/images/index-5.jpeg',
+        peopleImgUrl: 'assets/images/person-4.png',
+        name: 'Carol',
+        skill: '寵物行為訓練',
+        numOne: '45',
+        numTwo: '123',
+    },
+    {
+        id: '5',
+        bgImgUrl: 'assets/images/index-6.jpeg',
+        peopleImgUrl: 'assets/images/person-5.png',
+        name: 'Wiki',
+        skill: '寵物行為訓練',
+        numOne: '45',
+        numTwo: '123',
+    },
 ];
 const App = {
     data() {

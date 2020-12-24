@@ -68,34 +68,30 @@ current: index
         <div class="swiper-container">
             <div class="swiper-wrapper" id="app">
                 <!-- Slides -->
-                <div class="swiper-slide">
-                    <ul class="list-unstyled d-flex justify-content-between">
-                        <li v-for="item in nurse" class="swiper-li">
-                            <div class="card position-relative text-primary">
-                                <img v-bind:src="item.bgImgUrl" class="card-img-top" alt="..." />
-                                <img v-bind:src="item.peopleImgUrl" class="card-img-center" alt="..." />
-                                <div class="card-body p-0 mt-14 text-center">
-                                    <h5 class="card-title mb-1">{{item.name}}</h5>
-                                    <p class="card-text mb-3">{{item.skill}}</p>
-                                    <a href="#" class="btn btn-secondary w-50 mx-auto mb-5">預約</a>
-                                    <div class="d-flex justify-content-around mb-3">
-                                        <span>獲得評價</span>
-                                        <span>已完成訂單</span>
-                                    </div>
-                                    <div class="d-flex justify-content-around h3">
-                                        <div class="d-flex align-items-center">
-                                            <p class="mb-0 mr-1">{{item.numOne}}</p>
-                                            <span class="font-sm">則</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <p class="mb-0 mr-1">{{item.numTwo}}</p>
-                                            <span class="font-sm">件</span>
-                                        </div>
-                                    </div>
+                <div class="swiper-slide" v-for="item in nurse">
+                    <div class="card position-relative text-primary">
+                        <img v-bind:src="item.bgImgUrl" class="card-img-top" alt="..." />
+                        <img v-bind:src="item.peopleImgUrl" class="card-img-center" alt="..." />
+                        <div class="card-body p-0 mt-14 text-center">
+                            <h5 class="card-title mb-1">{{item.name}}</h5>
+                            <p class="card-text mb-3">{{item.skill}}</p>
+                            <a href="#" class="btn btn-secondary w-50 mx-auto mb-5">預約</a>
+                            <div class="d-flex justify-content-around mb-3">
+                                <span>獲得評價</span>
+                                <span>已完成訂單</span>
+                            </div>
+                            <div class="d-flex justify-content-around h3">
+                                <div class="d-flex align-items-center">
+                                    <p class="mb-0 mr-1">{{item.numOne}}</p>
+                                    <span class="font-sm">則</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="mb-0 mr-1">{{item.numTwo}}</p>
+                                    <span class="font-sm">件</span>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,16 +101,16 @@ current: index
 </section>
 <script>
     var swiper = new Swiper('.swiper-container', {
-        // slidesPerView: 3,
+        slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
         autoplay: {
             delay: 3000,
         },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        // pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true,
+        // },
         navigation: {
             nextEl: '.swiper-next',
             prevEl: '.swiper-prev',
