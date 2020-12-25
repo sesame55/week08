@@ -8,14 +8,22 @@
 
 .list-count {
     position: relative;
+    margin-left: 25%;
+    @include media-breakpoint-up(md) {
+        margin-left: 0%;
+    }
     &::after {
         content: '';
         position: absolute;
         width: 2px;
-        height: 200%;
+        height: 120%;
         background-color: #fff;
         left: 0;
-        top: 0;
-        bottom: 0;
+        top: -10%;
+        // bottom: -1%;
+        @include media-breakpoint-up(md) {
+            height: 200%;
+            top: 0;
+        }
     }
 }

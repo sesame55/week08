@@ -14,7 +14,11 @@
 }
 
 .bg-count-banner {
-    @include bgu('../images/index-9.jpeg', 584px);
+    @include bgu('../images/index-9.jpeg', 812px);
+    @include media-breakpoint-up(md) {
+        height: 584px;
+    }
+    
 }
 
 //共通
