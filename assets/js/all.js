@@ -55,6 +55,7 @@ Vue.createApp(App).mount('#app'); // index-swiper
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
+  spaceBetween: 0,
   breakpoints: {
     767: {
       slidesPerView: 3,
