@@ -61,7 +61,7 @@ current: index
 
 <!-- 保姆 -->
 <section class="container mt-15 mt-md-20">
-    <h2 class="mb-1 text-primary font-lg font-lg-3xl">本月熱門保姆</h2>
+    <h2 class="mb-1 text-primary font-3xl">本月熱門保姆</h2>
     <p class="mb-3 text-primary font-lg">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
     <!-- Swiper -->
     <div class="position-relative">
@@ -69,7 +69,7 @@ current: index
             <div class="swiper-wrapper" id="app">
                 <!-- Slides -->
                 <div class="swiper-slide" v-for="item in nurse">
-                    <div class="card position-relative text-primary">
+                    <div class="card shadow rounded position-relative text-primary pb-7">
                         <img v-bind:src="item.bgImgUrl" class="card-img-top" alt="..." />
                         <img v-bind:src="item.peopleImgUrl" class="card-img-center" alt="..." />
                         <div class="card-body p-0 mt-14 text-center">
@@ -95,7 +95,68 @@ current: index
                 </div>
             </div>
         </div>
-        <div class="swiper-prev material-icons text-secondary">play_circle_filled</div>
-        <div class="swiper-next material-icons text-secondary">play_circle_filled</div>
+        <div class="swiper-prev material-icons text-secondary d-none d-md-block">play_circle_filled</div>
+        <div class="swiper-next material-icons text-secondary d-none d-md-block">play_circle_filled</div>
+    </div>
+</section>
+
+<!-- 線上預約 -->
+<section class="container mt-15 mt-md-20">
+    <h2 class="mb-1 text-primary font-3xl">線上預約</h2>
+    <p class="mb-3 text-primary font-lg">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+    <!-- card -->
+    <div class="d-flex justify-content-between flex-column flex-md-row">
+        <div class="card mr-0 mr-md-2 mb-1 mb-md-0">
+            <a href="#" class="">
+                <img src="assets/images/index-5.jpeg" class="card-img img-service" alt="..." />
+                <div
+                    class="card-img-overlay p-0 h4 text-center d-flex justify-content-center align-items-center h-100 text-white link-service"
+                >
+                    寵物寄宿
+                </div>
+            </a>
+        </div>
+        <div class="card mr-0 mr-md-2 mb-1 mb-md-0">
+            <a href="#" class="">
+                <img src="assets/images/index-6.jpeg" class="card-img img-service" alt="..." />
+                <div
+                    class="card-img-overlay p-0 h4 text-center d-flex justify-content-center align-items-center h-100 text-white link-service"
+                >
+                    寵物美容
+                </div>
+            </a>
+        </div>
+        <div class="d-fex mr-0 mr-md-2 ">
+            <div class="card mb-1 ">
+                <a href="#" class="">
+                    <img src="assets/images/index-7.jpeg" class="card-img img-service-sm" alt="..." />
+                    <div
+                        class="card-img-overlay p-0 h4 text-center d-flex justify-content-center align-items-center h-100 text-white link-service"
+                    >
+                    到府照顧
+                    </div>
+                </a>
+            </div>
+            <div class="card mb-1 mb-md-0">
+                <a href="#" class="">
+                    <img src="assets/images/index-8.jpeg" class="card-img img-service-sm" alt="..." />
+                    <div
+                        class="card-img-overlay p-0 h4 text-center d-flex justify-content-center align-items-center h-100 text-white link-service"
+                    >
+                    遛狗保姆
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <a href="#" class="">
+                <img src="assets/images/index-3.jpeg" class="card-img img-service" alt="..." />
+                <div
+                    class="card-img-overlay p-0 h4 text-center d-flex justify-content-center align-items-center h-100 text-white link-service"
+                >
+                行為訓練
+                </div>
+            </a>
+        </div>
     </div>
 </section>

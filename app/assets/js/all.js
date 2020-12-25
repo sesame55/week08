@@ -41,8 +41,8 @@ const nurse = [
         peopleImgUrl: 'assets/images/person-5.png',
         name: 'Wiki',
         skill: '寄宿、美容',
-        numOne: '12',
-        numTwo: '345',
+        numOne: '123',
+        numTwo: '45',
     },
 ];
 const App = {
@@ -59,8 +59,14 @@ Vue.createApp(App).mount('#app');
 
 // index-swiper
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    breakpoints: {
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
     loop: true,
     autoplay: {
         delay: 3000,

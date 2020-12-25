@@ -8,7 +8,6 @@
 
 // banner
 .bg-index-banner {
-    
     @include bgu('../images/index-1.png', calc(100vh - 64px));
     background-position: left;
     background-size: contain;
@@ -17,3 +16,27 @@
 // .bg-footer-banner {
 //     @include bgu('../images/index10.jpg', calc(60vh));
 // }
+
+//共通
+.bg-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// 個別設定
+.bg-service {
+    // height: 350px;
+    width: 100%;
+    padding-top: 100%;
+}
+.bg-service-sm {
+    // height: 172px;
+    width: 100%;
+    padding-top: 50%;
+}
+.bg-service-lg {
+    // height: 172px;
+    width: 100%;
+    padding-top: 150%;
+}
