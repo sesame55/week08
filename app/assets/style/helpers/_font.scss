@@ -13,6 +13,7 @@ $font-size: map-merge(
     'xxl': ($font-size-base * 1.75),  //28
     '3xl': ($font-size-base * 2),      //32
     '4xl':($font-size-base * 2.5),     //40
+    '5xl':($font-size-base * 3),     //48
 ),
 $font-size
 );

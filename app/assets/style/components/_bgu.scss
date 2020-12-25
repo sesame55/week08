@@ -13,9 +13,9 @@
     background-size: contain;
 }
 
-// .bg-footer-banner {
-//     @include bgu('../images/index10.jpg', calc(60vh));
-// }
+.bg-count-banner {
+    @include bgu('../images/index-9.jpeg', 584px);
+}
 
 //共通
 .bg-cover {
@@ -24,19 +24,3 @@
     background-repeat: no-repeat;
 }
 
-// 個別設定
-.bg-service {
-    // height: 350px;
-    width: 100%;
-    padding-top: 100%;
-}
-.bg-service-sm {
-    // height: 172px;
-    width: 100%;
-    padding-top: 50%;
-}
-.bg-service-lg {
-    // height: 172px;
-    width: 100%;
-    padding-top: 150%;
-}
