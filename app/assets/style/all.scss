@@ -6,18 +6,18 @@
 
 @import 'base/base';
 
-
 @import 'components/nav';//選單
 @import 'components/bgu';//背景
 @import 'components/img';//img
 @import 'components/swiper';//swiper
+@import 'components/card';//
+@import 'components/pagination';//分頁
 
 
 @import 'helpers/font';//文字大小
 
-
 @import 'page/index';
 
 * {
-    outline: 1px solid green;
+    // outline: 1px solid green;
 }

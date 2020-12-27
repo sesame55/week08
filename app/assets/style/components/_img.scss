@@ -14,10 +14,14 @@
     }
 }
 
-.img-service {
-    height: 132px;
+// 共通
+.img-cover {
     object-fit: cover;
     object-position: center center;
+}
+
+.img-service {
+    height: 132px;
     @include media-breakpoint-up(md) {
         height: 210px;
     }
@@ -27,8 +31,6 @@
 }
 .img-service-sm {
     height: 173px;
-    object-fit: cover;
-    object-position: center center;
     @include media-breakpoint-up(md) {
         height: 103px;
     }
@@ -37,8 +39,13 @@
     }
 }
 
-.img-reserve{
+.img-reserve {
     max-height: 160px;
-    object-fit: cover;
-    object-position: center center;
+}
+
+.img-homestay-banner {
+    max-height: 352px;
+    @include media-breakpoint-up(md) {
+        height: 315px;
+    }
 }
