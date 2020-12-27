@@ -1,5 +1,6 @@
 "use strict";
 
+// index
 var nurse = [{
   id: '1',
   bgImgUrl: 'assets/images/index-2.jpeg',
@@ -51,7 +52,60 @@ var App = {
     this.nurse = nurse;
   }
 };
-Vue.createApp(App).mount('#app'); // index-swiper
+Vue.createApp(App).mount('#app'); // petHome
+
+var petHome = [{
+  id: '1',
+  imgUrl: 'assets/images/homestay-2.jpeg',
+  title: '寵屋屋',
+  skill: '寄宿、美容洗澡、到府保姆'
+}, {
+  id: '2',
+  imgUrl: 'assets/images/homestay-3.jpeg',
+  title: '毛孩好家',
+  skill: '寄宿、美容洗澡、到府保姆'
+}, {
+  id: '3',
+  imgUrl: 'assets/images/homestay-4.jpeg',
+  title: '妖貓X僕SS',
+  skill: '寄宿、美容洗澡'
+}, {
+  id: '4',
+  imgUrl: 'assets/images/homestay-5.jpeg',
+  title: '貓是主我是僕',
+  skill: '寄宿、美容洗澡、到府保姆'
+}, {
+  id: '5',
+  imgUrl: 'assets/images/homestay-6.jpeg',
+  title: '汪汪隊',
+  skill: '寄宿、到府保姆、寵物行為訓練'
+}, {
+  id: '6',
+  imgUrl: 'assets/images/homestay-7.jpeg',
+  title: '卯咪',
+  skill: '寄宿、寵物行為訓練'
+}, {
+  id: '7',
+  imgUrl: 'assets/images/index-2.jpeg',
+  title: '貓狗大戰',
+  skill: '寄宿、美容洗澡、到府保姆'
+}, {
+  id: '8',
+  imgUrl: 'assets/images/homestay-8.jpeg',
+  title: '萌寵底家',
+  skill: '寄宿、到府保姆'
+}];
+var list = {
+  data: function data() {
+    return {
+      petHome: []
+    };
+  },
+  created: function created() {
+    this.petHome = petHome;
+  }
+};
+Vue.createApp(list).mount('#list'); // index-swiper
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
