@@ -58,6 +58,26 @@ const App = {
 };
 Vue.createApp(App).mount('#app');
 
+// index-swiper
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    breakpoints: {
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
+    },
+});
+
 // petHome
 const petHome = [
     {
@@ -108,7 +128,6 @@ const petHome = [
         title: '萌寵底家',
         skill: '寄宿、到府保姆',
     },
-    
 ];
 const list = {
     data() {
@@ -122,22 +141,12 @@ const list = {
 };
 Vue.createApp(list).mount('#list');
 
-// index-swiper
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    breakpoints: {
-        767: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-    },
-    loop: true,
-    autoplay: {
-        delay: 3000,
-    },
-    navigation: {
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev',
-    },
+// petHomeDetail-showImg
+$(document).ready(function () {
+    $('.imgList-link img').click(function () {
+        $('.showImg img').attr('src', $(this).attr('src'));
+        //第一個src是上方顯示圖片位置
+        //第二個src是下方來源位置
+        return false;//避免跳轉
+    });
 });
