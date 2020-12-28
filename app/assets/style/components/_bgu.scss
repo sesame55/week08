@@ -19,7 +19,6 @@
     @include media-breakpoint-up(md) {
         height: 584px;
     }
-    
 }
 
 //共通
@@ -29,3 +28,13 @@
     background-repeat: no-repeat;
 }
 
+//login
+.bg-login {
+    @include bgu('../images/index-1.png', calc(100vh - 64px));
+    background-position: left;
+    background-size: contain;
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}
