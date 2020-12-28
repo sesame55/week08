@@ -147,6 +147,55 @@ $(document).ready(function () {
         $('.showImg img').attr('src', $(this).attr('src'));
         //第一個src是上方顯示圖片位置
         //第二個src是下方來源位置
-        return false;//避免跳轉
+        return false; //避免跳轉
     });
 });
+
+// petHomeDetail-Owner
+const owners = [
+    {
+        id: '1',
+        imgUrl: 'assets/images/person-4.png',
+        name: '葉子',
+        text: '服務很秋！',
+    },
+    {
+        id: '2',
+        imgUrl: 'assets/images/person-5.png',
+        name: 'Joanne',
+        text: '貓完全不想回家了。',
+    },
+    {
+        id: '3',
+        imgUrl: 'assets/images/person-6.png',
+        name: 'Ray',
+        text: '超喜歡超棒超讚的...',
+    },
+    {
+        id: '4',
+        imgUrl: 'assets/images/person-7.png',
+        name: '穎旻',
+        text: '下次還會麻煩您～',
+    },{
+        id: '5',
+        imgUrl: 'assets/images/person-8.png',
+        name: '俊儀',
+        text: '讚的！',
+    },{
+        id: '6',
+        imgUrl: 'assets/images/person-9.png',
+        name: '子琪',
+        text: '服務很棒耶哈哈哈！',
+    },
+];
+const owner = {
+    data() {
+        return {
+            owners: [],
+        };
+    },
+    created() {
+        this.owners = owners;
+    },
+};
+Vue.createApp(owner).mount('#owner');
