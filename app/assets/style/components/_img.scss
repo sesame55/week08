@@ -80,9 +80,10 @@
     height: 60px;
 }
 
+//login
 .img-login {
-    width: 100%;
+    width: 42%;
     height: calc(100vh - 64px);
     object-fit: cover;
-    object-position: center center;
+    object-position: left;
 }

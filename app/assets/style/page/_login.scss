@@ -1,0 +1,13 @@
+.login-page{
+    position: relative;
+    height: calc(100vh - 64px);
+    .login-item{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include media-breakpoint-up(lg){
+            position: absolute;
+        }
+    }
+}
