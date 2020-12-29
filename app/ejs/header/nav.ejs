@@ -14,28 +14,58 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-            <span class="material-icons p-3">
-                menu
-            </span>
+            <span class="material-icons p-3"> menu </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-md-auto">
-                <li class="nav-item mr-0 mr-md-10 ">
-                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="＃">
+                <li class="nav-item mr-0 mr-md-10">
+                    <a
+                        class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base"
+                        href="＃"
+                    >
                         預約服務
                     </a>
                 </li>
                 <li class="nav-item mr-0 mr-md-10">
-                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="#">
+                    <a
+                        class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base"
+                        href="#"
+                    >
                         成為寵物保姆
                     </a>
                 </li>
+                <% if (current !== "member") { %>
                 <li class="nav-item">
-                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="login.html">
-                    登入 
-                </a>
+                    <a
+                        class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base"
+                        href="login.html"
+                    >
+                        登入
+                    </a>
                 </li>
+                <% } else { %>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base d-flex justify-content-center"
+                        href="#"
+                        data-toggle="dropdown"
+                        data-display="static"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Hi, Joanne
+                        <span class="material-icons member-btn"> arrow_drop_down </span>
+                    </a>
+                    <div class="dropdown-menu text-center text-md-left">
+                        <a class="dropdown-item  text-primary" href="#">會員資料</a>
+                        <a class="dropdown-item  text-primary" href="#">預約查詢</a>
+                        <a class="dropdown-item text-primary" href="#">歷史預約</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-secondary" href="#">切換保母帳號</a>
+                    </div>
+                </li>
+                <% } %>
             </ul>
         </div>
     </div>

@@ -87,3 +87,12 @@
     object-fit: cover;
     object-position: left;
 }
+
+// member
+.img-member {
+width: 75px;
+height: 75px;
+@include media-breakpoint-up(md) {}
+width: 95px;
+height: 95px;
+}

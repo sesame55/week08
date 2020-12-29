@@ -199,3 +199,9 @@ const owner = {
     },
 };
 Vue.createApp(owner).mount('#owner');
+
+// member
+$('.member-btn').click(function (e) { 
+    e.preventDefault();
+    $('.member-btn').toggleClass('active');
+});
