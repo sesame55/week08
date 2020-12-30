@@ -14,13 +14,18 @@ a:hover {
     text-decoration: none;
 }
 
-.sticky-top {
-    position: relative;
+
+//不要直接改 sticky-top，會干擾 modal ...
+.sticky-top-pet {
+    position: static;
     @include media-breakpoint-up(lg) {
         position: sticky;
         top: 0;
+        
     }
 }
+
+
 .member-btn{
     &.active{
         transform: rotate(180deg);
