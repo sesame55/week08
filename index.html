@@ -19,7 +19,7 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </head>
 
-    <body>
+    <body >
         <!-- nav -->
         <nav class="navbar navbar-expand-md navbar-light p-0 topNav">
     <div class="container-fluid container-md">
@@ -37,28 +37,37 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-            <span class="material-icons p-3">
-                menu
-            </span>
+            <span class="material-icons p-3"> menu </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-md-auto">
-                <li class="nav-item mr-0 mr-md-10 ">
-                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="＃">
+                <li class="nav-item mr-0 mr-md-10">
+                    <a
+                        class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base"
+                        href="＃"
+                    >
                         預約服務
                     </a>
                 </li>
                 <li class="nav-item mr-0 mr-md-10">
-                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="#">
+                    <a
+                        class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base"
+                        href="#"
+                    >
                         成為寵物保姆
                     </a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base" href="#">
-                    登入 
-                </a>
+                    <a
+                        class="nav-link text-primary text-center d-block p-3 p-md-5 p-md-0 font-lg font-md-base"
+                        href="login.html"
+                    >
+                        登入
+                    </a>
                 </li>
+                
             </ul>
         </div>
     </div>
@@ -393,5 +402,105 @@
         <!-- <script>
             AOS.init();
         </script> -->
+        <!-- modal -->
+        <!-- 1 -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#step-one">Launch demo modal</button> -->
+
+<div
+    class="modal fade"
+    id="step-one"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    role="dialog"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-body pt-4 pt-md-15 pb-5 pb-md-12 px-6 px-lg-15 px-xl-8">
+                <div class="container-fluid">
+                    <!-- xl:left -->
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <!-- 標題 -->
+                            <div class="row">
+                                <div class="col-12 mb-3 mb-lg-5 mb-xl-8">
+                                    <h4 class="text-primary">預約項目</h4>
+                                </div>
+                            </div>
+                            <!-- ul + form -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- ul -->
+                                    <ul class="list-unstyled mb-0 d-flex justify-content-between">
+                                        <li class="card modal-item">
+                                            <div
+                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                            >
+                                                <span class="material-icons modal-icon"> house </span>
+                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">寄宿</p>
+                                            </div>
+                                        </li>
+                                        <li class="card modal-item">
+                                            <div
+                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                            >
+                                                <span class="material-icons modal-icon"> wash </span>
+                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">美容</p>
+                                            </div>
+                                        </li>
+                                        <li class="card modal-item">
+                                            <div
+                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                            >
+                                                <span class="material-icons modal-icon"> roofing </span>
+                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">
+                                                    到府保姆
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="card modal-item">
+                                            <div
+                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                            >
+                                                <span class="material-icons modal-icon"> directions_walk </span>
+                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">
+                                                    遛狗保姆
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- form -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- xl:right -->
+                        <div class="col-xl-4">
+                            <!-- img -->
+                            <div class="row">
+                                <div class="col-4 col-lg-12">
+                                    <img
+                                        src="assets/images/homestay-3.jpeg"
+                                        class="img-cover rounded img-fluid img-modal"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="row">
+                                .col-9
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2 -->
+
+<!-- 3 -->
+
+<!-- 4 -->
+
     </body>
 </html>
