@@ -13,75 +13,148 @@
         <div class="modal-content">
             <div class="modal-body pt-4 pt-md-15 pb-5 pb-md-12 px-6 px-lg-15 px-xl-8">
                 <div class="container-fluid">
-                    <!-- xl:left -->
                     <div class="row">
-                        <div class="col-xl-8">
-                            <!-- 標題 -->
-                            <div class="row">
-                                <div class="col-12 mb-3 mb-lg-5 mb-xl-8">
-                                    <h4 class="text-primary">預約項目</h4>
+                        <!-- 標題 -->
+                        <div class="col-xl-8 mb-3 mb-lg-5 mb-xl-8 order-lg-0 order-xl-0 d-block d-xl-none">
+                            <h4 class="text-primary">預約項目</h4>
+                        </div>
+                        <!-- ul + form -->
+                        <div class="col-xl-8 order-lg-2 order-xl-1 mt-6">
+                            <h4 class="text-primary mb-xl-8 d-none d-xl-block">預約項目</h4>
+                            <!-- ul -->
+                            <ul class="list-unstyled mb-0 d-flex justify-content-between">
+                                <li class="card modal-item">
+                                    <div
+                                        class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                    >
+                                        <span class="material-icons modal-icon"> house </span>
+                                        <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">寄宿</p>
+                                    </div>
+                                </li>
+                                <li class="card modal-item">
+                                    <div
+                                        class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                    >
+                                        <span class="material-icons modal-icon"> wash </span>
+                                        <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">美容</p>
+                                    </div>
+                                </li>
+                                <li class="card modal-item">
+                                    <div
+                                        class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                    >
+                                        <span class="material-icons modal-icon"> roofing </span>
+                                        <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">到府保姆</p>
+                                    </div>
+                                </li>
+                                <li class="card modal-item">
+                                    <div
+                                        class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
+                                    >
+                                        <span class="material-icons modal-icon"> directions_walk </span>
+                                        <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">遛狗保姆</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- form -->
+                            <form class="mt-6 mt-lg-7">
+                                <label for="date" class="mb-1">選擇日期</label>
+                                <!-- date -->
+                                <div class="form-row mb-5">
+                                    <div class="form-group mb-0 col-10 col-lg-5">
+                                        <input type="date" class="form-control" name="" id="" />
+                                    </div>
+                                    <div class="form-group mb-0 col-auto d-flex align-items-center">
+                                        <p class="mb-0">至</p>
+                                    </div>
+                                    <div class="form-group mb-0 col-10 col-lg-5">
+                                        <input type="date" class="form-control" name="" id="" />
+                                    </div>
+                                    <div class="form-group mb-0 col-auto d-flex align-items-center">
+                                        <p class="mb-0">共1晚</p>
+                                    </div>
                                 </div>
+                                <!-- num -->
+                                <div class="form-row">
+                                    <div class="form-group col-4 col-lg-2 mb-0 mr-0 mr-lg-6">
+                                        <label for="inputState" class="mb-1">毛孩數量</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>1隻</option>
+                                            <option>2隻</option>
+                                            <option>3隻</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-4 col-lg-3 mb-0 mr-0 mr-lg-6">
+                                        <label for="inputState" class="mb-1">您的毛孩是</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>貓</option>
+                                            <option>狗</option>
+                                            <option>松鼠</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-4 col-lg-3 mb-0">
+                                        <label for="inputState" class="mb-1">年齡</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>1歲</option>
+                                            <option>2歲</option>
+                                            <option>3歲</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- img -->
+                        <div class="col-xl-4 order-lg-1 order-xl-2 d-flex flex-xl-column align-items-center">
+                            <div class="col-4 col-xl-12 flex-grow-1 flex-shrink-1">
+                                <img
+                                    src="assets/images/homestay-3.jpeg"
+                                    class="img-cover rounded img-fluid img-modal"
+                                    alt=""
+                                />
                             </div>
-                            <!-- ul + form -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <!-- ul -->
-                                    <ul class="list-unstyled mb-0 d-flex justify-content-between">
-                                        <li class="card modal-item">
-                                            <div
-                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
-                                            >
-                                                <span class="material-icons modal-icon"> house </span>
-                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">寄宿</p>
-                                            </div>
-                                        </li>
-                                        <li class="card modal-item">
-                                            <div
-                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
-                                            >
-                                                <span class="material-icons modal-icon"> wash </span>
-                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">美容</p>
-                                            </div>
-                                        </li>
-                                        <li class="card modal-item">
-                                            <div
-                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
-                                            >
-                                                <span class="material-icons modal-icon"> roofing </span>
-                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">
-                                                    到府保姆
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="card modal-item">
-                                            <div
-                                                class="card-body p-0 d-flex flex-column justify-content-center align-items-center"
-                                            >
-                                                <span class="material-icons modal-icon"> directions_walk </span>
-                                                <p class="card-text modal-text mt-1 mb-0 font-base font-lg-lg">
-                                                    遛狗保姆
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- form -->
+                            <!-- title -->
+                            <div class="col-8 col-xl-12 mt-0 mt-xl-2 flex-grow-1 flex-shrink-1">
+                                <div class="d-flex flex-column flex-lg-row">
+                                    <h5 class="text-primary">毛孩好家</h5>
+                                    <div class="d-flex align-items-center text-warningDark">
+                                        <span class="material-icons mr-1"> grade </span>
+                                        <span class="material-icons mr-1"> grade </span>
+                                        <span class="material-icons mr-1"> grade </span>
+                                        <span class="material-icons mr-1"> grade </span>
+                                        <span class="material-icons mr-1"> grade </span>
+                                    </div>
                                 </div>
+                                <div class="d-flex align-items-center mt-2">
+                                    <span class="material-icons text-secondary mr-2"> place </span>
+                                    <p class="mb-0 text-primary">高雄市苓雅區、新興區、前鎮區</p>
+                                </div>
+                                <!-- </div> -->
                             </div>
                         </div>
-                        <!-- xl:right -->
-                        <div class="col-xl-4">
-                            <!-- img -->
+                        <!-- progress -->
+                        <div
+                            class="col-xl-8 order-lg-3 order-xl-3 d-flex align-items-center justify-content-center mt-lg-19 mt-xl-13"
+                        >
+                            <ul class="list-unstyled mb-0 d-flex justify-content-around w-100 text-center step-list">
+                                <li class="pt-2 w-100 step-list-item">預約項目</li>
+                                <li class="font-weight-light pt-2 w-100 step-list-item">預約資料</li>
+                                <li class="font-weight-light pt-2 w-100 step-list-item">付款資訊</li>
+                            </ul>
+                        </div>
+                        <!-- btn -->
+                        <div class="col-xl-4 mt-10 mt-lg-9 mt-xl-0 order-lg-4">
                             <div class="row">
-                                <div class="col-4 col-lg-12">
-                                    <img
-                                        src="assets/images/homestay-3.jpeg"
-                                        class="img-cover rounded img-fluid img-modal"
-                                        alt=""
-                                    />
+                                <div class="col-12 col-lg-6 col-xl-12">
+                                    <a
+                                        href="#"
+                                        class="text-secondary p-2 d-block text-center mb-lg-0 mb-xl-3"
+                                        data-dismiss="modal"
+                                        >返回</a
+                                    >
                                 </div>
-                            </div>
-                            <div class="row">
-                                .col-9
+                                <div class="col-12 col-lg-6 col-xl-12">
+                                    <button class="btn btn-secondary w-100">下一步</button>
+                                </div>
                             </div>
                         </div>
                     </div>

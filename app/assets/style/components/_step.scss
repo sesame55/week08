@@ -1,0 +1,17 @@
+.step-list{
+    &-item{
+        border-top: 2px solid $secondary;
+        position: relative;
+            &::after{
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $secondary;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateY(-60%);
+            }
+    }
+}

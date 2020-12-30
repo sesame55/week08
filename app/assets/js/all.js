@@ -176,12 +176,14 @@ const owners = [
         imgUrl: 'assets/images/person-7.png',
         name: '穎旻',
         text: '下次還會麻煩您～',
-    },{
+    },
+    {
         id: '5',
         imgUrl: 'assets/images/person-8.png',
         name: '俊儀',
         text: '讚的！',
-    },{
+    },
+    {
         id: '6',
         imgUrl: 'assets/images/person-9.png',
         name: '子琪',
@@ -201,7 +203,8 @@ const owner = {
 Vue.createApp(owner).mount('#owner');
 
 // member
-$('.member-btn').click(function (e) { 
+$('.member-btn').click(function (e) {
     e.preventDefault();
     $('.member-btn').toggleClass('active');
 });
+
