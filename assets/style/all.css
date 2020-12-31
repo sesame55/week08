@@ -12088,7 +12088,8 @@ a:hover {
     .sticky-top-pet {
       position: -webkit-sticky;
       position: sticky;
-      top: 0; } }
+      top: 0;
+      z-index: 100; } }
 
 .member-btn.active {
   -webkit-transform: rotate(180deg);
