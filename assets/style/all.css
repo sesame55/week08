@@ -12393,6 +12393,9 @@ a:hover {
     .modal-item .active .modal-text, .modal-item:hover .modal-text {
       color: #772400; }
 
+.modal-icon-end {
+  font-size: 80px; }
+
 .step-list-item {
   border-top: 2px solid #D54100;
   position: relative; }
@@ -12664,8 +12667,5 @@ a:hover {
     @media (min-width: 992px) {
       .login-page .login-item {
         position: absolute; } }
-
-* {
-  outline: 1px solid green; }
 
 /*# sourceMappingURL=all.css.map */

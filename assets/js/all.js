@@ -181,5 +181,16 @@ Vue.createApp(owner).mount('#owner'); // member
 $('.member-btn').click(function (e) {
   e.preventDefault();
   $('.member-btn').toggleClass('active');
+}); // modal
+
+$(document).ready(function () {
+  $('[data-dismiss="modal"][data-toggle="modal"]').on('click', function () {
+    //console.log('OK');//確認有抓到方訊
+    var target = $(this).data('target'); //console.log(target);//確認有抓到data-target
+
+    $(target).on('shown.bs.modal', function () {
+      $('body').addClass('modal-open');
+    });
+  });
 });
 //# sourceMappingURL=all.js.map
