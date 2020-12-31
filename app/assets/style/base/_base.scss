@@ -21,7 +21,7 @@ a:hover {
     @include media-breakpoint-up(lg) {
         position: sticky;
         top: 0;
-        
+        z-index: 100;
     }
 }
 
