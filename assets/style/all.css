@@ -12284,12 +12284,18 @@ a:hover {
 .img-modal {
   width: 100%;
   height: 100px; }
+  @media (min-width: 576px) {
+    .img-modal {
+      height: 130px; } }
+  @media (min-width: 768px) {
+    .img-modal {
+      height: 140px; } }
   @media (min-width: 992px) {
     .img-modal {
-      height: 150px; } }
+      height: 180px; } }
   @media (min-width: 1200px) {
     .img-modal {
-      height: 282px; } }
+      height: 312px; } }
 
 .swiper-prev {
   font-size: 44px;
@@ -12386,6 +12392,22 @@ a:hover {
       color: #F0AD25; }
     .modal-item .active .modal-text, .modal-item:hover .modal-text {
       color: #772400; }
+
+.step-list-item {
+  border-top: 2px solid #D54100;
+  position: relative; }
+  .step-list-item::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #D54100;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+            transform: translateY(-60%); }
 
 /*  font-size */
 .font-xs {
