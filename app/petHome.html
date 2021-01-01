@@ -99,7 +99,7 @@ current: petHome
     <div class="container" id="list">
         <ul class="row list-unstyled mb-0 card-list">
             <li class="col-6 col-lg-4 col-xl-3 card-list-item mb-8" v-for="item in petHome">
-                <div class="card card-shadow  h-100">
+                <div class="card card-shadow h-100">
                     <img v-bind:src="item.imgUrl" class="card-img-top" alt="..." />
                     <div class="card-body pt-2 pb-15 bg-light px-4">
                         <h5 class="card-title mb-1 font-weight-normal">{{item.title}}</h5>
@@ -112,7 +112,13 @@ current: petHome
                     </div>
                     <div class="card-body d-flex justify-content-around p-0 text-center">
                         <a href="petHomeDetail.html" class="w-50 py-3 card-list-link">聯繫</a>
-                        <a href="#" class="w-50 text-secondary py-3 card-list-link"data-toggle="modal" data-target="#step-one">預約</a>
+                        <a
+                            href="#"
+                            class="w-50 text-secondary py-3 card-list-link"
+                            data-toggle="modal"
+                            data-target="#step-one"
+                            >預約</a
+                        >
                     </div>
                 </div>
             </li>
